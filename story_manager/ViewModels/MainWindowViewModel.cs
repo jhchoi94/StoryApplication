@@ -22,10 +22,10 @@ namespace story_manager.ViewModels
 
         public MainWindowViewModel()
         {
-            var client = new RestClient("https://api.bithumb.com");
+            var client = new RestClient("https://localhost:5001");
 
             client.Timeout = -1;
-            var request = new RestRequest("/public/ticker/BTC", Method.GET);
+            var request = new RestRequest("/WeatherForecast", Method.GET);
             var result = client.Execute(request);
             if (result.StatusCode == System.Net.HttpStatusCode.OK)
                 RestContent = result.Content;
