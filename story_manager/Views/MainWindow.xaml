@@ -6,6 +6,6 @@
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
         <!--<ContentControl prism:RegionManager.RegionName="ContentRegion" />-->
-        <TextBlock Text="{Binding RestContent}"/>
+        <TextBox Text="{Binding RestContent}"/>
     </Grid>
 </Window>
